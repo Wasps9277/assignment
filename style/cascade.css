@@ -1,0 +1,528 @@
+body{
+  margin: auto; background: #e5eae8;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+ul{
+  list-style: none;  margin: 0; padding:0; /*removes the marking style of list */
+}
+
+a{
+  text-decoration: none; /*removes the underline from the anchored text */
+}
+
+header{
+  background: #1a1a1a;
+  background-image: url("header.gif");
+  background-color: #1a1a1a;
+  background-position: top left; background-repeat: repeat;
+  border-bottom:0.5px solid #e5eae8; border-width: medium;
+  padding:1%;
+  display: flex;flex-direction: row; /* displays the header container in a row*/
+
+}
+
+.image{
+  width: 25%; /* defines the width of the left section of the header*/
+}
+
+.image img{
+  height: 70px; /*defines the size of an image */
+  width: 307px;
+}
+
+.menubar{
+  width: 75%; /* defines the width of the right section of the header*/
+}
+
+.menubar ul{
+  display: flex; flex-flow: row-reverse;
+  padding-top: 2%;/*reverses the flex-item */
+}
+
+.menubar ul li {
+  margin-left: 3px;
+}
+
+.menubar ul li a img {
+  height: 35px;
+  width: 35px;
+}
+
+.menubar ul li img{
+  height: 30px;
+  width: 30px;
+
+}
+
+.menubar ul li:hover{
+    opacity: 0.9; /*on hover the opacity is applied to the list items */
+}
+
+
+.menubar .icon{
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+.menubar ul li ul{
+  display: none; position: absolute; width:10%;
+
+}
+
+.menubar ul li:hover ul {
+  display: block; background:#000000;
+
+}
+
+.menubar ul li:hover ul li{
+
+  text-align: justify;
+
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+
+}
+
+
+
+.menubar ul li:hover ul li a{
+  color: #e5eae8;
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+  display: block;
+
+}
+
+.menubar ul li:hover ul li:hover{
+  background: #7aa244;
+
+}
+
+
+section{
+  background: #e5eae8;
+  display: flex; flex-direction: column; /*Sets the flex-items in a column */
+
+}
+
+
+.top{
+  border-bottom:0.5px solid #e5eae8; border-width: medium; /*border is created at the bottom of the top section */
+  height: 460px;
+
+
+
+
+}
+
+
+.top img{
+
+  left: 20%;
+  position: absolute; /*stacks the images on top of one another */
+  top: 107px;/*positions the image 3px from the top */
+  border-bottom: 2px solid #e5eae8;
+
+
+}
+
+@-moz-keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.imgcon img:nth-child(5) {
+  -moz-animation: xfade 50s 0s infinite;
+}
+.imgcon img:nth-child(4) {
+    -moz-animation: xfade 50s 10s infinite;
+}
+.imgcon img:nth-child(3) {
+    -moz-animation: xfade 50s 20s infinite;
+}
+.imgcon img:nth-child(2) {
+    -moz-animation: xfade 50s 30s infinite;
+}
+.imgcon img:nth-child(1) {
+    -moz-animation: xfade 50s 40s infinite;
+}
+
+
+.bottom{
+    background: #7aa244;
+    display: flex; flex-direction: row;
+    text-align: center;
+    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+  }
+
+
+.read{
+  background-color: #1a1a1a;
+    border: none;
+    color: #e5eae8;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
+    width: 118px;
+    height: 30px;
+    box-shadow: 1px 1px 3px #1a1a1a;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.left{
+  width: 25%;
+  background: #e5eae8;
+}
+
+.right{
+  width: 25%;
+  background: #e5eae8;
+
+}
+
+.sub1{
+  width: 25%;
+  border-right: 1px solid  #e5eae8;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.sub1  p{
+  color:  #1a1a1a;
+
+}
+
+.read1{
+  background-color: #1a1a1a;
+  color:  #e5eae8;
+}
+
+.read1:hover{
+  background-color:  #7aa244;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  font-size: 15px;
+}
+
+
+
+.sub2{
+  width: 25%;
+  border-right: 1px solid  #e5eae8;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+
+}
+
+.sub2  p{
+  color:  #1a1a1a;
+}
+
+.read2{
+  background-color: #1a1a1a;
+  color:  #e5eae8;
+}
+
+.read2:hover{
+  background-color:  #7aa244;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  font-size: 15px;
+}
+
+
+.sub3{
+  width: 25%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+
+}
+
+.sub3  p{
+  color:  #1a1a1a;
+}
+
+.read3{
+  background-color: #1a1a1a;
+  color:  #e5eae8;
+}
+
+
+
+.read3:hover{
+  background-color:  #7aa244;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  font-size: 15px;
+}
+
+
+.bottom img{
+ width: 40px;
+ height: 40px;
+
+ padding-right: 3px;
+ display: block;
+ margin: 0 auto;
+}
+
+
+
+
+footer{
+  background: #1a1a1a;
+  display: flex;flex-direction: column;;
+  border-top:0.5px solid #e5eae8; border-width: medium; border-top-style:solid;
+
+}
+
+.footerup{
+  display: flex; flex-direction: row;
+  margin-bottom: 10px;
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+
+}
+
+.footerup .share{
+  width: 50%;
+  color: #e5eae8;
+
+}
+
+.share ul{
+  display: flex;flex-direction: row;
+  padding-left: 0.5%;
+  margin-top: 2%;
+}
+
+.share ul li{
+  padding: 0 2%;
+  border-right: 1px solid  #e5eae8;
+  margin-right: 3px; /*sets the margin on the right of the list items */
+}
+
+.share ul li:last-child{
+  border-right: none;
+}
+
+.share ul li a{
+  color: #e5eae8;
+}
+
+.share ul li:hover a{
+  color: #7aa244; /*on hover the color of the text changes */
+}
+
+.footerup .subscribe{
+  width: 50%;
+  text-align: center;  color: #e5eae8;
+  margin-top: 20px; /*sets the margin to 20px from the top */
+}
+
+.subscribe img{
+  height:28px;
+  display: block;
+  margin: 0 auto;
+}
+
+.subscribe p{
+  text-align: center;
+}
+
+.subscribe form{
+  text-align: center;
+}
+
+.subscribe input[type=text]{
+  color: #4a4a4a;
+  background: #e5eae8;
+  width: 110px;
+  transition: width .75s ease-in-out; /*Input box completes its transition in 0.75s */
+}
+
+.subscribe input[type=text]:hover{
+  width: 200px; /*When the input type text is clicked the width of the box increases */
+}
+
+
+.subscribe input[type=submit]{
+  color: #1a1a1a;
+  background: #e5eae8;
+}
+
+.footerbottom{
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+}
+
+.copyright{
+  text-align: center; color: #e5eae8;
+}
+
+.copyright p{
+  margin-bottom: 1px;
+
+}
+
+
+@media all and (max-width: 600px){
+  header{
+    flex-direction: column;
+    width: 98%;
+  }
+
+  .image{
+    width: 100%;
+    text-align: center;
+  }
+
+  .image img{
+    width: 100%;
+  }
+
+  .menubar{
+    display: none;
+  }
+
+  /*.menubar{
+    width: 100%;
+  }
+
+  .menubar ul{
+    flex-flow: row;
+  }
+
+  .menubar ul li{
+    flex-grow: 1;
+  }*/
+
+
+section{
+  width: 100%;
+  flex-direction: column;
+  }
+
+  .left, .right{
+    display: none;
+  }
+
+  .top{
+    border-bottom:0.5px solid #e5eae8; border-width: medium; /*border is created at the bottom of the top section */
+    height: 165px;
+  }
+
+  .top img{
+    width:100%; /*sets the width of the image */
+
+    position: absolute; /*stacks the images on top of one another */
+    top: 85px;/*positions the image 3px from the top */
+    left:0%;
+    border-bottom: 2px solid #e5eae8;
+
+  }
+
+
+
+.bottom{
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+
+}
+
+
+ .sub1{
+  border-bottom: 3px solid  #e5eae8;
+  width: 100%;
+  border-right: 0px;
+  text-align: center;
+
+}
+
+.bottom .sub2{
+  border-bottom: 3px solid  #e5eae8;
+  border-right: 0px;
+  text-align: center;
+  width: 100%;
+
+}
+
+.bottom .sub3{
+  border-right: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+footer{
+  flex-direction: column;
+
+}
+
+.footerup{
+  flex-direction: column;
+  width: 100%;
+}
+
+.share{
+  width: 100%;
+  text-align: left;
+
+}
+
+.share ul{
+  margin-bottom: 3px;
+}
+
+.share ul li{
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 14.5px;
+
+}
+
+ .subscribe{
+  width: 100%;
+  display: block;margin: 0 auto;
+}
+
+.subscribe p{
+  display: none;
+}
+
+.subscribe img{
+  height:20px;
+
+  margin-bottom: 4px;
+}
+
+.subscribe input[type=text]{
+  margin-bottom: 3px;
+}
+
+
+}
