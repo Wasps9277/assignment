@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 ul{
-  list-style: none; /*removes the marking style of list */
+  list-style: none;  margin: 0; padding:0; /*removes the marking style of list */
 }
 
 a{
@@ -20,7 +20,6 @@ header{
   background-color: #1a1a1a;
   background-position: top left; background-repeat: repeat;
   border-bottom:0.5px solid #e5eae8; border-width: medium;
-  height: 50px;
   padding:1%;
   display: flex;flex-direction: row; /* displays the header container in a row*/
 
@@ -31,8 +30,8 @@ header{
 }
 
 .image img{
-  height: 60px; /*defines the size of an image */
-  width: 270px;
+  height: 70px; /*defines the size of an image */
+  width: 307px;
 }
 
 .menubar{
@@ -52,22 +51,26 @@ header{
 }
 
 section{
-  background: #e5eae8;
+  /*background: #e5eae8;*/
+  background-image: url("bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
   display: flex; flex-direction: row; /*Sets the flex-items in a row */
 
 }
 
 .leftnull{
   width: 20%;
-  height: 500px;
 }
 
 .main{
   width: 60%;
-  background: #e5eae8;
+  background-image: url("bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
+
   display: flex;flex-direction: row;
-  height: 500px;
-  justify-content: space-around;
+
 }
 
 .menuleft{
@@ -77,38 +80,81 @@ section{
 
 .top{
   height: 30px;
-  background: #e5eae8;
+  background-image: url("bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
+
 }
 
 .bottom{
   border-radius: 15px;
   box-shadow: 5px 5px 10px #878985;
   background: #7aa244;
-  height: 440px;
+
+}
+
+.connect{
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
+  text-align: left;
+  text-align: justify;
+  padding: 3%;
+  margin-top: 15px;
+
+}
+
+.box{
+  width: 400px;
+  height: 150px;
+  background: #e5eae8;
+  border: 1px solid #1a1a1a;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  color: #878985;
+  font-size: 14px;
+
+}
+
+.box p{
+  margin-left: 5px;
+  opacity: 0.4;
+}
+
+.comment{
+  margin-bottom: 10px;
+}
+
+.form{
+  text-align: center;
+
 }
 
 
-.about{
-  background-color: #7aa244;
-    border: none;
-    color: #e5eae8;
-    padding: 1px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
-    width: 135px;
-    height: 40px;
-    margin-left: 250px;
-    margin-top: 3px;
-}
+
+
+
+  .about{
+    background-color: #7aa244;
+      border: none;
+      color: #e5eae8;
+      padding: 1px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 8px;
+      font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 18px;
+      width: 118px;
+      height: 40px;
+      margin-left: 120px;
+      margin-top: 3px;
+  }
 
 
 .menuright{
   width: 40%;
   display: flex; flex-direction: column;
   margin: 10px;
+
 
 }
 
@@ -163,9 +209,10 @@ section{
 
 .rightnull{
   width: 20%;
-  height: 500px;
 
 }
+
+
 
 
 
@@ -184,17 +231,25 @@ footer{
 }
 
 .footerup .share{
-  text-align: left; width: 50%; color: white;
+   width: 50%; color: white;
 }
 
 .share ul{
   display: flex;flex-direction: row;
+  padding-left: 0.5%;
+  margin-top: 2%;
 }
 
 .share ul li{
-  margin-left: 2px; /*sets the margin on the left of the list items */
-  margin-right: 3px; /*sets the margin on the right of the list items */
+  padding: 0 2%;
+  border-right: 1px solid  #e5eae8;
+  margin-right: 3px;
 }
+
+.share ul li:last-child{
+  border-right: none;
+}
+
 
 .share ul li a{
   color: #e5eae8;
@@ -268,13 +323,12 @@ footer{
 
   .main{
     flex-direction: column;
-    height: 850px;
     width: 98%;
 
   }
 
   .menuleft{
-    width: 98%;
+    width: 93%;
     margin: 10px;
   }
 
@@ -344,34 +398,33 @@ footer{
   }
 
   footer{
-    width: 100%;
     flex-direction: column;
 
   }
 
   .footerup{
     flex-direction: column;
-
+    width: 100%;
   }
 
-  .footerup .share{
+  .share{
     width: 100%;
+    text-align: left;
+
   }
 
   .share ul{
-    text-align: center;
     margin-bottom: 3px;
-
   }
 
   .share ul li{
-    text-align: center;
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
+    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 14.5px;
 
   }
 
-  .footerup .subscribe{
+   .subscribe{
     width: 100%;
+    display: block;margin: 0 auto;
   }
 
   .subscribe p{
@@ -380,9 +433,13 @@ footer{
 
   .subscribe img{
     height:20px;
-    display: block;
-    margin: 0 auto;
+
     margin-bottom: 4px;
   }
 
-}
+  .subscribe input[type=text]{
+    margin-bottom: 3px;
+  }
+
+
+  }

@@ -20,7 +20,6 @@ header{
   background-color: #1a1a1a;
   background-position: top left; background-repeat: repeat;
   border-bottom:0.5px solid #e5eae8; border-width: medium;
-  height: 50px;
   padding:1%;
   display: flex;flex-direction: row; /* displays the header container in a row*/
 
@@ -31,8 +30,8 @@ header{
 }
 
 .image img{
-  height: 60px; /*defines the size of an image */
-  width: 270px;
+  height: 70px; /*defines the size of an image */
+  width: 307px;
 }
 
 .menubar{
@@ -52,22 +51,24 @@ header{
 }
 
 section{
-  background: #e5eae8;
+  /*background: #e5eae8;*/
+  background-image: url("bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
   display: flex; flex-direction: row; /*Sets the flex-items in a row */
 
 }
 
 .leftnull{
   width: 20%;
-  height: 500px;
+
 }
 
 .main{
   width: 60%;
-  background: #e5eae8;
+
   display: flex;flex-direction: row;
-  height: 500px;
-  justify-content: space-around;
+
 }
 
 .menuleft{
@@ -77,15 +78,28 @@ section{
 
 .top{
   height: 30px;
-  background: #e5eae8;
+
 }
 
 .bottom{
   border-radius: 15px;
   box-shadow: 5px 5px 10px #878985;
   background: #7aa244;
-  height: 440px;
+
 }
+
+.text{
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
+  text-align: left;
+  text-align: justify;
+  padding: 3%;
+
+}
+
+.text h4{
+  border-bottom: 1px solid #1a1a1a;
+}
+
 
 
 .about{
@@ -97,7 +111,7 @@ section{
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
+    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 18px;
     width: 118px;
     height: 40px;
     margin-left: 120px;
@@ -122,7 +136,7 @@ section{
 }
 
 .bar1 p{
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 25px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 25px;
   text-align: center;
   color: #1a1a1a;
   padding: 6%;
@@ -138,7 +152,7 @@ section{
 }
 
 .bar2 p{
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 25px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 25px;
   text-align: center;
   color: #e5eae8;
   padding: 6%;
@@ -155,7 +169,7 @@ section{
 }
 
 .bar3 p{
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 25px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 25px;
   text-align: center;
   color: #1a1a1a;
   padding: 6%;
@@ -163,7 +177,6 @@ section{
 
 .rightnull{
   width: 20%;
-  height: 500px;
 
 }
 
@@ -179,22 +192,30 @@ footer{
 .footerup{
   display: flex; flex-flow: row wrap; justify-content: space-around;
   margin-bottom: 10px;
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
 
 }
 
 .footerup .share{
-  text-align: left; width: 50%; color: white;
+   width: 50%; color: white;
 }
 
 .share ul{
   display: flex;flex-direction: row;
+  padding-left: 0.5%;
+  margin-top: 2%;
 }
 
 .share ul li{
-  margin-left: 2px; /*sets the margin on the left of the list items */
-  margin-right: 3px; /*sets the margin on the right of the list items */
+  padding: 0 2%;
+  border-right: 1px solid  #e5eae8;
+  margin-right: 3px;
 }
+
+.share ul li:last-child{
+  border-right: none;
+}
+
 
 .share ul li a{
   color: #e5eae8;
@@ -239,7 +260,7 @@ footer{
 }
 
 .footerbottom{
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
 
@@ -268,13 +289,12 @@ footer{
 
   .main{
     flex-direction: column;
-    height: 850px;
     width: 98%;
 
   }
 
   .menuleft{
-    width: 98%;
+    width: 93%;
     margin: 10px;
   }
 
@@ -295,7 +315,7 @@ footer{
   }
 
   .bar1 p{
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
     text-align: center;
     color: #1a1a1a;
     padding: 4%;
@@ -312,7 +332,7 @@ footer{
   }
 
   .bar2 p{
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
     text-align: center;
     color:  #e5eae8;
     padding: 4%;
@@ -329,7 +349,7 @@ footer{
   }
 
   .bar3 p{
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
     text-align: center;
     color: #1a1a1a;
     padding: 4%;
@@ -344,34 +364,33 @@ footer{
   }
 
   footer{
-    width: 100%;
     flex-direction: column;
 
   }
 
   .footerup{
     flex-direction: column;
-
+    width: 100%;
   }
 
-  .footerup .share{
+  .share{
     width: 100%;
+    text-align: left;
+
   }
 
   .share ul{
-    text-align: center;
     margin-bottom: 3px;
-
   }
 
   .share ul li{
-    text-align: center;
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
+    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 13px;
 
   }
 
-  .footerup .subscribe{
+   .subscribe{
     width: 100%;
+    display: block;margin: 0 auto;
   }
 
   .subscribe p{
@@ -380,9 +399,13 @@ footer{
 
   .subscribe img{
     height:20px;
-    display: block;
-    margin: 0 auto;
+
     margin-bottom: 4px;
   }
 
-}
+  .subscribe input[type=text]{
+    margin-bottom: 3px;
+  }
+
+
+  }

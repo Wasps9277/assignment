@@ -1,5 +1,7 @@
 body{
-  margin: auto; background: #e5eae8;
+  margin: auto;   background-image: url("bg.gif");
+    background-repeat: repeat;
+    background-position: left top;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -92,7 +94,7 @@ header{
 
 .menubar ul li:hover ul li a{
   color: #e5eae8;
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
   display: block;
 
 }
@@ -104,7 +106,7 @@ header{
 
 
 section{
-  background: #e5eae8;
+
   display: flex; flex-direction: column; /*Sets the flex-items in a column */
 
 }
@@ -148,19 +150,19 @@ section{
     }
 }
 
-.imgcon img:nth-child(5) {
+.top img:nth-child(5) {
   -moz-animation: xfade 50s 0s infinite;
 }
-.imgcon img:nth-child(4) {
+.top img:nth-child(4) {
     -moz-animation: xfade 50s 10s infinite;
 }
-.imgcon img:nth-child(3) {
+.top img:nth-child(3) {
     -moz-animation: xfade 50s 20s infinite;
 }
-.imgcon img:nth-child(2) {
+.top img:nth-child(2) {
     -moz-animation: xfade 50s 30s infinite;
 }
-.imgcon img:nth-child(1) {
+.top img:nth-child(1) {
     -moz-animation: xfade 50s 40s infinite;
 }
 
@@ -169,7 +171,7 @@ section{
     background: #7aa244;
     display: flex; flex-direction: row;
     text-align: center;
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 18px;
   }
 
 
@@ -182,8 +184,8 @@ section{
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
-    width: 118px;
+    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 16px;
+    width: 125px;
     height: 30px;
     box-shadow: 1px 1px 3px #1a1a1a;
     cursor: pointer;
@@ -192,12 +194,17 @@ section{
 
 .left{
   width: 25%;
-  background: #e5eae8;
+  background-image: url("bg.gif");
+    background-repeat: repeat;
+    background-position: left top;
+
 }
 
 .right{
   width: 25%;
-  background: #e5eae8;
+  background-image: url("bg.gif");
+    background-repeat: repeat;
+    background-position: left top;
 
 }
 
@@ -208,10 +215,14 @@ section{
   margin-top: 10px;
   text-align: center;
 
+
+
 }
 
 .sub1  p{
   color:  #1a1a1a;
+  margin-left: 3px;
+  margin-right:3px;
 
 }
 
@@ -240,6 +251,9 @@ section{
 
 .sub2  p{
   color:  #1a1a1a;
+  margin-left: 3px;
+  margin-right:3px;
+
 }
 
 .read2{
@@ -265,6 +279,9 @@ section{
 
 .sub3  p{
   color:  #1a1a1a;
+  margin-left: 3px;
+  margin-right:3px;
+
 }
 
 .read3{
@@ -304,7 +321,8 @@ footer{
 .footerup{
   display: flex; flex-direction: row;
   margin-bottom: 10px;
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 20px;
 
 }
 
@@ -376,7 +394,8 @@ footer{
 }
 
 .footerbottom{
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
 
@@ -501,7 +520,8 @@ footer{
 }
 
 .share ul li{
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 14.5px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 13px;
 
 }
 
