@@ -16,6 +16,8 @@ a{
   text-decoration: none; /*removes the underline from the anchored text */
 }
 
+/*-------Header------*/
+
 header{
   background: #1a1a1a;
   background-image: url("header.gif");
@@ -24,7 +26,6 @@ header{
   border-bottom:0.5px solid #e5eae8; border-width: medium;
   padding:1%;
   display: flex;flex-direction: row; /* displays the header container in a row*/
-
 }
 
 .image{
@@ -57,7 +58,6 @@ header{
 .menubar ul li img{
   height: 30px;
   width: 30px;
-
 }
 
 .menubar ul li:hover{
@@ -72,64 +72,45 @@ header{
 
 .menubar ul li ul{
   display: none; position: absolute; width:10%;
-
 }
 
 .menubar ul li:hover ul {
   display: block; background:#000000;
-
 }
 
 .menubar ul li:hover ul li{
-
   text-align: justify;
-
   margin-bottom: 5px;
   margin-top: 10px;
-
-
 }
-
-
 
 .menubar ul li:hover ul li a{
   color: #e5eae8;
   font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
   display: block;
-
 }
 
 .menubar ul li:hover ul li:hover{
   background: #7aa244;
-
 }
 
-
+/*-----section-----*/
 section{
-
   display: flex; flex-direction: column; /*Sets the flex-items in a column */
-
 }
 
 
 .top{
   border-bottom:0.5px solid #e5eae8; border-width: medium; /*border is created at the bottom of the top section */
   height: 460px;
-
-
-
-
 }
 
 
 .top img{
-
   left: 20%;
   position: absolute; /*stacks the images on top of one another */
   top: 107px;/*positions the image 3px from the top */
   border-bottom: 2px solid #e5eae8;
-
-
 }
 
 @-moz-keyframes xfade {
@@ -153,19 +134,22 @@ section{
 .top img:nth-child(5) {
   -moz-animation: xfade 50s 0s infinite;
 }
+
 .top img:nth-child(4) {
     -moz-animation: xfade 50s 10s infinite;
 }
+
 .top img:nth-child(3) {
     -moz-animation: xfade 50s 20s infinite;
 }
+
 .top img:nth-child(2) {
     -moz-animation: xfade 50s 30s infinite;
 }
+
 .top img:nth-child(1) {
     -moz-animation: xfade 50s 40s infinite;
 }
-
 
 .bottom{
     background: #7aa244;
@@ -176,7 +160,7 @@ section{
 
 
 .read{
-  background-color: #1a1a1a;
+    background-color: #1a1a1a;
     border: none;
     color: #e5eae8;
     padding: 1px 10px;
@@ -193,19 +177,17 @@ section{
 }
 
 .left{
-  width: 25%;
-  background-image: url("bg.gif");
+    width: 25%;
+    background-image: url("bg.gif");
     background-repeat: repeat;
     background-position: left top;
-
 }
 
 .right{
-  width: 25%;
-  background-image: url("bg.gif");
+    width: 25%;
+    background-image: url("bg.gif");
     background-repeat: repeat;
     background-position: left top;
-
 }
 
 .sub1{
@@ -214,16 +196,12 @@ section{
   margin-bottom: 5px;
   margin-top: 10px;
   text-align: center;
-
-
-
 }
 
 .sub1  p{
   color:  #1a1a1a;
   margin-left: 3px;
   margin-right:3px;
-
 }
 
 .read1{
@@ -238,22 +216,18 @@ section{
   font-size: 15px;
 }
 
-
-
 .sub2{
   width: 25%;
   border-right: 1px solid  #e5eae8;
   margin-top: 10px;
   margin-bottom: 5px;
   text-align: center;
-
 }
 
 .sub2  p{
   color:  #1a1a1a;
   margin-left: 3px;
   margin-right:3px;
-
 }
 
 .read2{
@@ -274,22 +248,18 @@ section{
   margin-top: 10px;
   margin-bottom: 5px;
   text-align: center;
-
 }
 
 .sub3  p{
   color:  #1a1a1a;
   margin-left: 3px;
   margin-right:3px;
-
 }
 
 .read3{
   background-color: #1a1a1a;
   color:  #e5eae8;
 }
-
-
 
 .read3:hover{
   background-color:  #7aa244;
@@ -298,24 +268,19 @@ section{
   font-size: 15px;
 }
 
-
 .bottom img{
  width: 40px;
  height: 40px;
-
  padding-right: 3px;
  display: block;
  margin: 0 auto;
 }
 
-
-
-
+/*-----footer-----*/
 footer{
   background: #1a1a1a;
   display: flex;flex-direction: column;;
   border-top:0.5px solid #e5eae8; border-width: medium; border-top-style:solid;
-
 }
 
 .footerup{
@@ -323,13 +288,11 @@ footer{
   margin-bottom: 10px;
   font-family: "Philosopher Regular", Philosopher, sans-serif;
   font-size: 20px;
-
 }
 
 .footerup .share{
   width: 50%;
   color: #e5eae8;
-
 }
 
 .share ul{
@@ -387,7 +350,6 @@ footer{
   width: 200px; /*When the input type text is clicked the width of the box increases */
 }
 
-
 .subscribe input[type=submit]{
   color: #1a1a1a;
   background: #e5eae8;
@@ -398,7 +360,6 @@ footer{
   font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
-
 }
 
 .copyright{
@@ -407,9 +368,7 @@ footer{
 
 .copyright p{
   margin-bottom: 1px;
-
 }
-
 
 @media all and (max-width: 600px){
   header{
@@ -448,41 +407,34 @@ section{
   flex-direction: column;
   }
 
-  .left, .right{
-    display: none;
+.left, .right{
+  display: none;
   }
 
-  .top{
-    border-bottom:0.5px solid #e5eae8; border-width: medium; /*border is created at the bottom of the top section */
-    height: 165px;
+.top{
+  border-bottom:0.5px solid #e5eae8; border-width: medium; /*border is created at the bottom of the top section */
+  height: 165px;
   }
 
-  .top img{
-    width:100%; /*sets the width of the image */
-
-    position: absolute; /*stacks the images on top of one another */
-    top: 85px;/*positions the image 3px from the top */
-    left:0%;
-    border-bottom: 2px solid #e5eae8;
-
-  }
-
-
+.top img{
+  width:100%; /*sets the width of the image */
+  position: absolute; /*stacks the images on top of one another */
+  top: 85px;/*positions the image 3px from the top */
+  left:0%;
+  border-bottom: 2px solid #e5eae8;
+}
 
 .bottom{
   flex-direction: column;
   text-align: center;
   width: 100%;
-
 }
-
 
  .sub1{
   border-bottom: 3px solid  #e5eae8;
   width: 100%;
   border-right: 0px;
   text-align: center;
-
 }
 
 .bottom .sub2{
@@ -490,7 +442,6 @@ section{
   border-right: 0px;
   text-align: center;
   width: 100%;
-
 }
 
 .bottom .sub3{
@@ -501,7 +452,6 @@ section{
 
 footer{
   flex-direction: column;
-
 }
 
 .footerup{
@@ -512,7 +462,6 @@ footer{
 .share{
   width: 100%;
   text-align: left;
-
 }
 
 .share ul{
@@ -522,7 +471,6 @@ footer{
 .share ul li{
   font-family: "Philosopher Regular", Philosopher, sans-serif;
   font-size: 13px;
-
 }
 
  .subscribe{
@@ -536,13 +484,10 @@ footer{
 
 .subscribe img{
   height:20px;
-
   margin-bottom: 4px;
 }
 
 .subscribe input[type=text]{
   margin-bottom: 3px;
 }
-
-
 }
