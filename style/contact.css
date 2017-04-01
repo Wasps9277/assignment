@@ -313,6 +313,15 @@ footer{
 @media all and (max-width: 600px){
   header{
     flex-direction: column;
+    width: 98%;
+  }
+
+  .image{
+    width: 100%;
+    text-align: center;
+  }
+
+  .image img{
     width: 100%;
   }
 
@@ -345,8 +354,9 @@ footer{
   }
 
   .bar1{
+    width: 93%;
 
-    height: 100px;
+    height: 60px;
     background:#7aa244;
     margin: 10px;
     box-shadow: 5px 5px 10px  #878985;
@@ -358,12 +368,13 @@ footer{
     font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
     text-align: center;
     color: #1a1a1a;
-    padding: 4%;
+    padding: 0%;
   }
 
   .bar2{
+    width: 93%;
 
-    height: 100px;
+    height: 60px;
     background:#1a1a1a;
     margin: 10px;
     box-shadow: 5px 5px 10px  #878985;
@@ -375,12 +386,13 @@ footer{
     font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
     text-align: center;
     color:  #e5eae8;
-    padding: 4%;
+    padding: 0%;
   }
 
   .bar3{
+    width: 93%;
 
-    height: 100px;
+    height: 60px;
     background:#7aa244;
     margin: 10px;
     box-shadow: 5px 5px 10px  #878985;
@@ -392,15 +404,29 @@ footer{
     font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
     text-align: center;
     color: #1a1a1a;
-    padding: 4%;
+    padding: 0%;
   }
 
-
+  .about{
+    width: 120px;
+    padding: 1%;
+    font-size: 18px;
+    margin-left: 90px;
+  }
 
   .rightnull{
     height: 3px;
     width: 100%;
 
+  }
+
+  .connect{
+    font-size: 16px;
+  }
+
+  .box{
+    width: 225px;
+    height: 90px;
   }
 
   footer{
