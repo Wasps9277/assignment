@@ -1,6 +1,7 @@
+/*Esha rajbhandari
+UN ID: 16418519*/
 body{
   margin: auto; background: #e5eae8;
-
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -15,15 +16,17 @@ a{
   text-decoration: none; /*removes the underline from the anchored text */
 }
 
+/*-----header-----*/
 header{
   background: #1a1a1a;
   background-image: url("header.gif");
   background-color: #1a1a1a;
-  background-position: top left; background-repeat: repeat;
-  border-bottom:0.5px solid #e5eae8; border-width: medium;
+  background-position: top left;
+  background-repeat: repeat; /*repeats the background image throughout the body*/
+  border-bottom:0.5px solid #e5eae8;
+  border-width: medium;
   padding:1%;
   display: flex;flex-direction: row; /* displays the header container in a row*/
-
 }
 
 .image{
@@ -31,7 +34,7 @@ header{
 }
 
 .image img{
-  height: 70px; /*defines the size of an image */
+  height: 70px;
   width: 307px;
 }
 
@@ -48,16 +51,16 @@ header{
 }
 
 .menubar ul li:hover{
-    opacity: 0.9; /*on hover the opacity is applied to the list items */
+  opacity: 0.9; /*on hover the opacity is applied to the list items */
 }
 
+/*-----section-----*/
 section{
-
   background-image: url("bg.gif");
   background-position: left top;
   background-repeat: repeat;
-  display: flex; flex-direction: row; /*Sets the flex-items in a row */
-
+  display: flex;
+  flex-direction: row; /*Sets the flex-items in a row */
 }
 
 .leftnull{
@@ -66,9 +69,8 @@ section{
 
 .main{
   width: 60%;
-
-  display: flex;flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .menuleft{
@@ -76,14 +78,15 @@ section{
 }
 
 .top{
-  height: 30px;
+  height: 30px; /*sets height to the "top" division*/
 }
 
 .bottom{
   border-radius: 15px;
-  box-shadow: 5px 5px 10px #878985;
+  box-shadow: 5px 5px 10px #878985; /*shadow effect is added to the bottom division*/
   background: #7aa244;
-  display: flex;flex-direction: column;
+  display: flex;
+  flex-direction: column; /*displays the flex items in column*/
 }
 
 .text{
@@ -94,30 +97,30 @@ section{
   padding-bottom: 0px;
 }
 
-
-.text p{
+.text h1{
+  margin-top: 25px;
   border-top: 1px solid #1a1a1a;
-  border-bottom: 1px solid #1a1a1a;
+  padding: 1%;
+  padding-bottom: 0px;
 }
 
-.text p h2{
+.text h2{
   font-weight: lighter;
-
+  border-bottom: 1px solid #1a1a1a;
+  padding: 1%;
+  padding-top: 0px;
 }
 
 .info{
   padding: 2%;
   font-family: "Philosopher Regular", Philosopher, sans-serif;
   padding-top: 0px;
-
 }
 
 .info p{
   color:#e5eae8;
   text-align: justify;
-
   font-size: 22px;
-
 }
 
 .info h3{
@@ -127,35 +130,30 @@ section{
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: "Philosopher Regular", Philosopher, sans-serif;
-
 }
 
 .info h4{
   color: #141414;
   font-family: "Philosopher Regular", Philosopher, sans-serif;
-
 }
 
-
-
-
+/*-----button-----*/
 .about{
   background-color: #7aa244;
-    border: none;
-    color: #e5eae8;
-    padding: 1px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-family: "Philosopher Regular", Philosopher, sans-serif;
-    font-size: 22px;
-    width: 135px;
-    height: 40px;
-    margin-left: 120px;
-    margin-top: 3px;
+  border: none;
+  color: #e5eae8;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 22px;
+  width: 135px;
+  height: 40px;
+  margin-left: 120px;
+  margin-top: 3px;
 }
-
 
 .menuright{
   display: flex; flex-direction: row;
@@ -190,7 +188,6 @@ section{
   box-shadow: 5px 5px 10px #878985;
   border-radius: 50%;
   margin-top: 20px;
-
 }
 
 .bar2 p{
@@ -210,7 +207,6 @@ section{
   box-shadow: 5px 5px 10px #878985;
   border-radius: 50%;
   margin-top: 20px;
-
 }
 
 .bar3 p{
@@ -220,32 +216,31 @@ section{
   color: #1a1a1a;
   padding: 6%;
   padding-top: 20%;
-
 }
 
 .rightnull{
   width: 20%;
 }
 
-
-
+/*-----footer-----*/
 footer{
   background: #1a1a1a;
-  display: flex;flex-direction: column;;
-  border-top:0.5px solid #e5eae8; border-width: medium; border-top-style:solid;
+  display: flex;flex-direction: column;
+  border-top:0.5px solid #e5eae8;
+  border-width: medium;
+   border-top-style:solid;
 }
-
 
 .footerup{
   display: flex; flex-flow: row wrap; justify-content: space-around;
   margin-bottom: 10px;
   font-family: "Philosopher Regular", Philosopher, sans-serif;
  font-size: 20px;
-
 }
 
 .footerup .share{
-   width: 50%; color: white;
+   width: 50%;
+   color: white;
 }
 
 .share ul{
@@ -254,7 +249,7 @@ footer{
   margin-top: 2%;
 }
 
--webkit-.share ul li{
+.share ul li{
   padding: 0 2%;
   border-right: 1px solid  #e5eae8;
   margin-right: 3px;
@@ -263,7 +258,6 @@ footer{
 .share ul li:last-child{
   border-right: none;
 }
-
 
 .share ul li a{
   color: #e5eae8;
@@ -301,7 +295,6 @@ footer{
   width: 200px; /*When the input type text is clicked the width of the box increases */
 }
 
-
 .subscribe input[type=submit]{
   color: #1a1a1a;
   background: #e5eae8;
@@ -309,115 +302,110 @@ footer{
 
 .footerbottom{
   font-family: "Philosopher Regular", Philosopher, sans-serif;
- font-size: 16px;
+  font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
-
 }
 
 .copyright{
   text-align: center; color: #e5eae8;
 }
 
+/*-----mobile responsive-----*/
 @media all and (max-width: 600px){
-  header{
-    flex-direction: column;
-    width: 98%;
-  }
+header{
+  flex-direction: column;
+  width: 98%;
+}
 
-  .image{
-    width: 100%;
-    text-align: center;
-  }
+.image{
+  width: 100%;
+  text-align: center;
+}
 
-  .image img{
-    width: 100%;
-  }
+.image img{
+  width: 100%;
+}
 
+section{
+  flex-direction: column;
+  width: 100%;
+}
 
-  section{
-    flex-direction: column;
-    width: 100%;
+.leftnull{
+  height: 3px;
+  width: 100%;
+}
 
-  }
+.main{
+  flex-direction: column;
+  width: 98%;
+}
 
-  .leftnull{
-    height: 3px;
-    width: 100%;
-  }
+.menuleft{
+  width: 93%;
+  margin: 10px;
+}
 
-  .main{
-    flex-direction: column;
-    width: 98%;
+.menuright{
+  flex-direction: column;;
+  width: 100%;
+  margin: 1px;
+ }
 
-  }
+.bar1{
+  width: 93%;
+  height: 60px;
+  background:#7aa244;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+ }
 
-  .menuleft{
-    width: 93%;
-    margin: 10px;
-  }
+.bar1 p{
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #1a1a1a;
+  padding: 0%;
+}
 
-  .menuright{
-    flex-direction: column;;
-    width: 100%;
-    margin: 1px;
-  }
+.bar2{
+  width: 93%;
+  height: 60px;
+  background:#1a1a1a;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+ }
 
-  .bar1{
-    width: 93%;
-    height: 60px;
-    background:#7aa244;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
+.bar2 p{
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color:  #e5eae8;
+  padding: 0%;
+}
 
-  .bar1 p{
-    font-family: "Philosopher Regular", Philosopher, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: #1a1a1a;
-    padding: 0%;
-  }
+.bar3{
+  width: 93%;
+  height: 60px;
+  background:#7aa244;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+}
 
-  .bar2{
-    width: 93%;
-
-    height: 60px;
-    background:#1a1a1a;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
-
-  .bar2 p{
-    font-family: "Philosopher Regular", Philosopher, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color:  #e5eae8;
-    padding: 0%;
-  }
-
-  .bar3{
-    width: 93%;
-
-    height: 60px;
-    background:#7aa244;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
-
-  .bar3 p{
-    font-family: "Philosopher Regular", Philosopher, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: #1a1a1a;
-    padding: 0%;
-  }
+.bar3 p{
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #1a1a1a;
+  padding: 0%;
+}
 
 .about{
   width: 100px;
@@ -430,56 +418,49 @@ footer{
   font-size: 18px;
 }
 
-  .rightnull{
-    height: 3px;
-    width: 100%;
+.rightnull{
+  height: 3px;
+  width: 100%;
+}
 
-  }
+footer{
+  flex-direction: column;
+}
 
-  footer{
-    flex-direction: column;
+.footerup{
+  flex-direction: column;
+  width: 100%;
+}
 
-  }
+.share{
+  width: 100%;
+  text-align: left;
+}
 
-  .footerup{
-    flex-direction: column;
-    width: 100%;
-  }
+.share ul{
+  margin-bottom: 3px;
+}
 
-  .share{
-    width: 100%;
-    text-align: left;
+.share ul li{
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 13px;
+ }
 
-  }
+.subscribe{
+  width: 100%;
+  display: block;margin: 0 auto;
+}
 
-  .share ul{
-    margin-bottom: 3px;
-  }
+.subscribe p{
+  display: none;
+}
 
-  .share ul li{
-    font-family: "Philosopher Regular", Philosopher, sans-serif;
-    font-size: 13px;
+.subscribe img{
+  height:20px;
+  margin-bottom: 4px;
+}
 
-  }
-
-   .subscribe{
-    width: 100%;
-    display: block;margin: 0 auto;
-  }
-
-  .subscribe p{
-    display: none;
-  }
-
-  .subscribe img{
-    height:20px;
-
-    margin-bottom: 4px;
-  }
-
-  .subscribe input[type=text]{
-    margin-bottom: 3px;
-  }
-
-
-  }
+.subscribe input[type=text]{
+  margin-bottom: 3px;
+}
+}

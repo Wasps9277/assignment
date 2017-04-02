@@ -1,3 +1,5 @@
+/*Esha rajbhandari
+UN ID: 16418519*/
 body{
   margin: auto; background: #e5eae8;
 }
@@ -14,15 +16,17 @@ a{
   text-decoration: none; /*removes the underline from the anchored text */
 }
 
+/*-----header-----*/
 header{
   background: #1a1a1a;
   background-image: url("header.gif");
   background-color: #1a1a1a;
-  background-position: top left; background-repeat: repeat;
-  border-bottom:0.5px solid #e5eae8; border-width: medium;
+  background-position: top left;
+  background-repeat: repeat;
+  border-bottom:0.5px solid #e5eae8;
+  border-width: medium;
   padding:1%;
   display: flex;flex-direction: row; /* displays the header container in a row*/
-
 }
 
 .image{
@@ -50,13 +54,13 @@ header{
     opacity: 0.9; /*on hover the opacity is applied to the list items */
 }
 
+/*-----section-----*/
 section{
-  /*background: #e5eae8;*/
   background-image: url("bg.gif");
   background-position: left top;
   background-repeat: repeat;
-  display: flex; flex-direction: row; /*Sets the flex-items in a row */
-
+  display: flex;
+  flex-direction: row; /*Sets the flex-items in a row */
 }
 
 .leftnull{
@@ -66,8 +70,8 @@ section{
 .main{
   width: 60%;
   padding-bottom: 2%;
-  display: flex;flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .menuleft{
@@ -83,18 +87,20 @@ section{
   border-radius: 15px;
   box-shadow: 5px 5px 10px #878985;
   background: #7aa244;
-  display: flex;flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .connect{
-  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 20px;
   text-align: left;
   text-align: justify;
   padding: 3%;
   margin-top: 15px;
-
 }
 
+/*-----comment box-----*/
 .box{
   width: 700px;
   height: 170px;
@@ -106,7 +112,6 @@ section{
   margin-bottom: 5px;
   color: #878985;
   font-size: 14px;
-
 }
 
 .box p{
@@ -120,36 +125,30 @@ section{
 
 .form{
   text-align: center;
-
 }
 
-
-
-
-
+/*-----button-----*/
 .about{
   background-color: #7aa244;
-    border: none;
-    color: #e5eae8;
-    padding: 1px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-family: "Philosopher Regular", Philosopher, sans-serif;
-    font-size: 23px;
-    width: 150px;
-    height: 40px;
-    margin-left: 500px;
-    margin-top: 3px;
+  border: none;
+  color: #e5eae8;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 23px;
+  width: 150px;
+  height: 40px;
+  margin-left: 500px;
+  margin-top: 3px;
 }
-
 
 .menuright{
   display: flex; flex-direction: row;
   margin: 10px;
   width: 100%;
-
 }
 
 .bar1{
@@ -180,7 +179,6 @@ section{
   box-shadow: 5px 5px 10px #878985;
   border-radius: 50%;
   margin-top: 20px;
-
 }
 
 .bar2 p{
@@ -200,7 +198,6 @@ section{
   box-shadow: 5px 5px 10px #878985;
   border-radius: 50%;
   margin-top: 20px;
-
 }
 
 .bar3 p{
@@ -210,30 +207,26 @@ section{
   color: #1a1a1a;
   padding: 6%;
   padding-top: 20%;
-
 }
 
 .rightnull{
   width: 20%;
-
 }
 
-
-
-
-
+/*-----footer-----*/
 footer{
   background: #1a1a1a;
   display: flex;flex-direction: column;;
   border-top:0.5px solid #e5eae8; border-width: medium; border-top-style:solid;
-
 }
 
 .footerup{
-  display: flex; flex-flow: row wrap; justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   margin-bottom: 10px;
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
-
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif;
+  font-size: 20px;
 }
 
 .footerup .share{
@@ -255,7 +248,6 @@ footer{
 .share ul li:last-child{
   border-right: none;
 }
-
 
 .share ul li a{
   color: #e5eae8;
@@ -293,7 +285,6 @@ footer{
   width: 200px; /*When the input type text is clicked the width of the box increases */
 }
 
-
 .subscribe input[type=submit]{
   color: #1a1a1a;
   background: #e5eae8;
@@ -303,175 +294,163 @@ footer{
   font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
-
 }
 
 .copyright{
   text-align: center; color: #e5eae8;
 }
 
+/*-----mobile responsive-----*/
 @media all and (max-width: 600px){
-  header{
-    flex-direction: column;
-    width: 98%;
-  }
+header{
+  flex-direction: column;
+  width: 98%;
+}
 
-  .image{
-    width: 100%;
-    text-align: center;
-  }
+.image{
+  width: 100%;
+  text-align: center;
+}
 
-  .image img{
-    width: 100%;
-  }
+.image img{
+  width: 100%;
+}
 
-  section{
-    flex-direction: column;
-    width: 100%;
+section{
+  flex-direction: column;
+  width: 100%;
+}
 
-  }
+.leftnull{
+  height: 3px;
+  width: 100%;
+}
 
-  .leftnull{
-    height: 3px;
-    width: 100%;
-  }
+.main{
+  flex-direction: column;
+  width: 98%;
+ }
 
-  .main{
-    flex-direction: column;
-    width: 98%;
+.menuleft{
+  width: 93%;
+  margin: 10px;
+}
 
-  }
+.menuright{
+  flex-direction: column;;
+  width: 100%;
+  margin: 1px;
+}
 
-  .menuleft{
-    width: 93%;
-    margin: 10px;
-  }
+.bar1{
+  width: 93%;
+  height: 60px;
+  background:#7aa244;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+}
 
-  .menuright{
-    flex-direction: column;;
-    width: 100%;
-    margin: 1px;
-  }
+.bar1 p{
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+  text-align: center;
+  color: #1a1a1a;
+  padding: 0%;
+}
 
-  .bar1{
-    width: 93%;
+.bar2{
+  width: 93%;
+  height: 60px;
+  background:#1a1a1a;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+}
 
-    height: 60px;
-    background:#7aa244;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
+.bar2 p{
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+  text-align: center;
+  color:  #e5eae8;
+  padding: 0%;
+}
 
-  .bar1 p{
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
-    text-align: center;
-    color: #1a1a1a;
-    padding: 0%;
-  }
+.bar3{
+  width: 93%;
+  height: 60px;
+  background:#7aa244;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+}
 
-  .bar2{
-    width: 93%;
+.bar3 p{
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
+  text-align: center;
+  color: #1a1a1a;
+  padding: 0%;
+}
 
-    height: 60px;
-    background:#1a1a1a;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
+.about{
+  width: 120px;
+  padding: 1%;
+  font-size: 18px;
+  margin-left: 90px;
+}
 
-  .bar2 p{
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
-    text-align: center;
-    color:  #e5eae8;
-    padding: 0%;
-  }
+.rightnull{
+  height: 3px;
+  width: 100%;
+}
 
-  .bar3{
-    width: 93%;
+.connect{
+  font-size: 16px;
+}
 
-    height: 60px;
-    background:#7aa244;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
+.box{
+  width: 225px;
+  height: 90px;
+}
 
-  .bar3 p{
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 20px;
-    text-align: center;
-    color: #1a1a1a;
-    padding: 0%;
-  }
+footer{
+  flex-direction: column;
+}
 
-  .about{
-    width: 120px;
-    padding: 1%;
-    font-size: 18px;
-    margin-left: 90px;
-  }
+.footerup{
+  flex-direction: column;
+  width: 100%;
+}
 
-  .rightnull{
-    height: 3px;
-    width: 100%;
+.share{
+  width: 100%;
+  text-align: left;
+}
 
-  }
+.share ul{
+  margin-bottom: 3px;
+}
 
-  .connect{
-    font-size: 16px;
-  }
+.share ul li{
+  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 14.5px;
+}
 
-  .box{
-    width: 225px;
-    height: 90px;
-  }
+.subscribe{
+  width: 100%;
+  display: block;margin: 0 auto;
+}
 
-  footer{
-    flex-direction: column;
+.subscribe p{
+  display: none;
+}
 
-  }
+.subscribe img{
+  height:20px;
+  margin-bottom: 4px;
+}
 
-  .footerup{
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .share{
-    width: 100%;
-    text-align: left;
-
-  }
-
-  .share ul{
-    margin-bottom: 3px;
-  }
-
-  .share ul li{
-    font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 14.5px;
-
-  }
-
-   .subscribe{
-    width: 100%;
-    display: block;margin: 0 auto;
-  }
-
-  .subscribe p{
-    display: none;
-  }
-
-  .subscribe img{
-    height:20px;
-
-    margin-bottom: 4px;
-  }
-
-  .subscribe input[type=text]{
-    margin-bottom: 3px;
-  }
-
-
-  }
+.subscribe input[type=text]{
+  margin-bottom: 3px;
+}
+}

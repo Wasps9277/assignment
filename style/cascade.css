@@ -1,7 +1,9 @@
+/*Esha rajbhandari
+UN ID: 16418519*/
 body{
-  margin: auto;   background-image: url("bg.gif");
-    background-repeat: repeat;
-    background-position: left top;
+  margin: auto; background-image: url("bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -9,7 +11,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 ul{
-  list-style: none;  margin: 0; padding:0; /*removes the marking style of list */
+  list-style: none; /*removes the marking style of list */
+  margin: 0;
+  padding:0;
 }
 
 a{
@@ -22,8 +26,10 @@ header{
   background: #1a1a1a;
   background-image: url("header.gif");
   background-color: #1a1a1a;
-  background-position: top left; background-repeat: repeat;
-  border-bottom:0.5px solid #e5eae8; border-width: medium;
+  background-position: top left;
+  background-repeat: repeat; /*Repeats the background image throughout the body*/
+  border-bottom:0.5px solid #e5eae8;
+  border-width: medium;
   padding:1%;
   display: flex;flex-direction: row; /* displays the header container in a row*/
 }
@@ -42,8 +48,9 @@ header{
 }
 
 .menubar ul{
-  display: flex; flex-flow: row-reverse;
-  padding-top: 2%;/*reverses the flex-item */
+  display: flex;
+  flex-flow: row-reverse;  /*reverses the flex-item */
+  padding-top: 2%;
 }
 
 .menubar ul li {
@@ -64,18 +71,20 @@ header{
     opacity: 0.9; /*on hover the opacity is applied to the list items */
 }
 
-
 .menubar .icon{
   margin-right: 3px;
   margin-top: 3px;
 }
 
 .menubar ul li ul{
-  display: none; position: absolute; width:10%;
+  display: none;
+  position: absolute;
+  width:10%;
 }
 
 .menubar ul li:hover ul {
-  display: block; background:#000000;
+  display: block;
+  background:#000000;
 }
 
 .menubar ul li:hover ul li{
@@ -86,7 +95,8 @@ header{
 
 .menubar ul li:hover ul li a{
   color: #e5eae8;
-  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 20px;
   display: block;
 }
 
@@ -96,15 +106,15 @@ header{
 
 /*-----section-----*/
 section{
-  display: flex; flex-direction: column; /*Sets the flex-items in a column */
+  display: flex;
+  flex-direction: column; /*Sets the flex-items in a column */
 }
-
 
 .top{
-  border-bottom:0.5px solid #e5eae8; border-width: medium; /*border is created at the bottom of the top section */
+  border-bottom:0.5px solid #e5eae8; /*border is created at the bottom of the top section */
+  border-width: medium;
   height: 460px;
 }
-
 
 .top img{
   left: 20%;
@@ -113,6 +123,7 @@ section{
   border-bottom: 2px solid #e5eae8;
 }
 
+/*-----For mozilla firefox-----*/
 @-moz-keyframes xfade {
     0% {
         opacity: 1;
@@ -131,63 +142,115 @@ section{
     }
 }
 
+/*-----For google chrome and safari-----*/
+@-webkit-keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/*-----original-----*/
+@keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/*-----fading animation is added to each image. The animation plays infinitely-----*/
 .top img:nth-child(5) {
-  -moz-animation: xfade 50s 0s infinite;
+  -moz-animation: xfade 50s 0s infinite; /*-----for mozilla firefox-----*/
+  -webkit-animation: xfade 50s 0s infinite;/*-----for safari and google chrome-----*/
+  -animation: xfade 50s 0s infinite;
 }
 
 .top img:nth-child(4) {
-    -moz-animation: xfade 50s 10s infinite;
+  -moz-animation: xfade 50s 10s infinite;
+  -webkit-animation: xfade 50s 10s infinite;
+  animation: xfade 50s 10s infinite;
 }
 
 .top img:nth-child(3) {
-    -moz-animation: xfade 50s 20s infinite;
+  -moz-animation: xfade 50s 20s infinite;
+  -webkit-animation: xfade 50s 20s infinite;
+  animation: xfade 50s 20s infinite;
 }
 
 .top img:nth-child(2) {
-    -moz-animation: xfade 50s 30s infinite;
+  -moz-animation: xfade 50s 30s infinite;
+  -webkit-animation: xfade 50s 30s infinite;
+  animation: xfade 50s 30s infinite;
 }
 
 .top img:nth-child(1) {
-    -moz-animation: xfade 50s 40s infinite;
+  -moz-animation: xfade 50s 40s infinite;
+  -webkit-animation: xfade 50s 40s infinite;
+  animation: xfade 50s 40s infinite;
 }
 
 .bottom{
-    background: #7aa244;
-    display: flex; flex-direction: row;
-    text-align: center;
-    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 18px;
+  background: #7aa244;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 18px;
   }
 
 
 .read{
-    background-color: #1a1a1a;
-    border: none;
-    color: #e5eae8;
-    padding: 1px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 16px;
-    width: 125px;
-    height: 30px;
-    box-shadow: 1px 1px 3px #1a1a1a;
-    cursor: pointer;
-    margin-bottom: 7px;
+  background-color: #1a1a1a;
+  border: none;
+  color: #e5eae8;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px; /*-----sets curved edges to the button----*/
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 16px;
+  width: 125px;
+  height: 30px;
+  box-shadow: 1px 1px 3px #1a1a1a;
+  cursor: pointer;
+  margin-bottom: 7px;
 }
 
 .left{
-    width: 25%;
-    background-image: url("bg.gif");
-    background-repeat: repeat;
-    background-position: left top;
+  width: 25%;
+  background-image: url("bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
 }
 
 .right{
-    width: 25%;
-    background-image: url("bg.gif");
-    background-repeat: repeat;
-    background-position: left top;
+  width: 25%;
+  background-image: url("bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
 }
 
 .sub1{
@@ -242,7 +305,6 @@ section{
   font-size: 15px;
 }
 
-
 .sub3{
   width: 25%;
   margin-top: 10px;
@@ -279,12 +341,16 @@ section{
 /*-----footer-----*/
 footer{
   background: #1a1a1a;
-  display: flex;flex-direction: column;;
-  border-top:0.5px solid #e5eae8; border-width: medium; border-top-style:solid;
+  display: flex;
+  flex-direction: column;;
+  border-top:0.5px solid #e5eae8;
+  border-width: medium;
+  border-top-style:solid;
 }
 
 .footerup{
-  display: flex; flex-direction: row;
+  display: flex;
+  flex-direction: row;
   margin-bottom: 10px;
   font-family: "Philosopher Regular", Philosopher, sans-serif;
   font-size: 20px;
@@ -296,7 +362,8 @@ footer{
 }
 
 .share ul{
-  display: flex;flex-direction: row;
+  display: flex;
+  flex-direction: row;
   padding-left: 0.5%;
   margin-top: 2%;
 }
@@ -321,7 +388,8 @@ footer{
 
 .footerup .subscribe{
   width: 50%;
-  text-align: center;  color: #e5eae8;
+  text-align: center;
+  color: #e5eae8;
   margin-top: 20px; /*sets the margin to 20px from the top */
 }
 
@@ -363,63 +431,53 @@ footer{
 }
 
 .copyright{
-  text-align: center; color: #e5eae8;
+  text-align: center;
+  color: #e5eae8;
 }
 
 .copyright p{
   margin-bottom: 1px;
 }
 
+/*-----mobile responsive-----*/
 @media all and (max-width: 600px){
-  header{
-    flex-direction: column;
-    width: 98%;
-  }
+header{
+  flex-direction: column;
+  width: 98%;
+}
 
-  .image{
-    width: 100%;
-    text-align: center;
-  }
+.image{
+  width: 100%;
+  text-align: center;
+}
 
-  .image img{
-    width: 100%;
-  }
+.image img{
+  width: 100%;
+}
 
-  .menubar{
-    display: none;
-  }
-
-  /*.menubar{
-    width: 100%;
-  }
-
-  .menubar ul{
-    flex-flow: row;
-  }
-
-  .menubar ul li{
-    flex-grow: 1;
-  }*/
-
+.menubar{
+  display: none; /*If the width is less than or equal to 600px, the menubar is not displayed*/
+}
 
 section{
   width: 100%;
   flex-direction: column;
-  }
+}
 
 .left, .right{
   display: none;
-  }
+}
 
 .top{
-  border-bottom:0.5px solid #e5eae8; border-width: medium; /*border is created at the bottom of the top section */
+  border-bottom:0.5px solid #e5eae8;
+  border-width: medium; /*border is created at the bottom of the top section */
   height: 165px;
-  }
+}
 
 .top img{
   width:100%; /*sets the width of the image */
   position: absolute; /*stacks the images on top of one another */
-  top: 85px;/*positions the image 3px from the top */
+  top: 85px;/*positions the image 85px from the top */
   left:0%;
   border-bottom: 2px solid #e5eae8;
 }
@@ -475,7 +533,8 @@ footer{
 
  .subscribe{
   width: 100%;
-  display: block;margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .subscribe p{
@@ -489,5 +548,9 @@ footer{
 
 .subscribe input[type=text]{
   margin-bottom: 3px;
+}
+
+.copyright p{
+  font-size: 14px;
 }
 }

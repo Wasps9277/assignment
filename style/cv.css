@@ -1,3 +1,5 @@
+/*Esha rajbhandari
+UN ID: 16418519*/
 body{
   margin: auto; background: #e5eae8;
 }
@@ -19,7 +21,8 @@ header{
   background: #1a1a1a;
   background-image: url("header.gif");
   background-color: #1a1a1a;
-  background-position: top left; background-repeat: repeat;
+  background-position: top left;
+  background-repeat: repeat;
   border-bottom:0.5px solid #e5eae8; border-width: medium;
   padding:1%;
   display: flex;flex-direction: row; /* displays the header container in a row*/
@@ -39,7 +42,8 @@ header{
 }
 
 .menubar ul{
-  display: flex; flex-flow: row-reverse; /*reverses the flex-item */
+  display: flex;
+  flex-flow: row-reverse; /*reverses the flex-item */
 }
 
 .menubar ul li {
@@ -51,14 +55,11 @@ header{
 }
 
 /*-----Section-----*/
-
 section{
-  /*background: #e5eae8;*/
   background-image: url("bg.gif");
   background-position: left top;
   background-repeat: repeat;
   display: flex; flex-direction: row; /*Sets the flex-items in a row */
-
 }
 
 .leftnull{
@@ -95,6 +96,7 @@ section{
   border-bottom: 1px solid #1a1a1a;
 }
 
+/*-----button-----*/
 .about{
   background-color: #7aa244;
   border: none;
@@ -104,7 +106,8 @@ section{
   text-decoration: none;
   display: inline-block;
   border-radius: 8px;
-  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 22px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 22px;
   width: 135px;
   height: 40px;
   margin-left: 300px;
@@ -121,7 +124,7 @@ section{
   width: 150px;
   height: 150px;
   margin: 20px;
-  box-shadow: 5px 5px 10px  #878985;
+  box-shadow: 5px 5px 10px  #878985; /*sets the shadow of the flex item "bar1"*/
   border-radius: 50%;
   margin-top: 20px;
   margin-left: 12%;
@@ -174,23 +177,25 @@ section{
   padding-top: 20%;
 }
 
-
 .rightnull{
   width: 20%;
 }
 
 /*-----Footer-----*/
-
 footer{
   background: #1a1a1a;
   display: flex;flex-direction: column;;
-  border-top:0.5px solid #e5eae8; border-width: medium; border-top-style:solid;
+  border-top:0.5px solid #e5eae8;
+  border-width: medium;
+  border-top-style:solid;
 }
 
 .footerup{
-  display: flex; flex-flow: row wrap; justify-content: space-around;
+  display: flex; flex-flow: row wrap;
+  justify-content: space-around;
   margin-bottom: 10px;
-  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 20px;
 }
 
 .footerup .share{
@@ -212,7 +217,6 @@ footer{
 .share ul li:last-child{
   border-right: none;
 }
-
 
 .share ul li a{
   color: #e5eae8;
@@ -250,7 +254,6 @@ footer{
   width: 200px; /*When the input type text is clicked the width of the box increases */
 }
 
-
 .subscribe input[type=submit]{
   color: #1a1a1a;
   background: #e5eae8;
@@ -268,108 +271,108 @@ footer{
 
 /*-----mobile responsive-----*/
 @media all and (max-width: 600px){
-  header{
-    flex-direction: column;
-    width: 98%;
-  }
+header{
+  flex-direction: column;
+  width: 98%;
+ }
 
-  .image{
-    width: 100%;
-    text-align: center;
-  }
-
-  .image img{
-    width: 100%;
-  }
-
-  section{
-    flex-direction: column;
-    width: 100%;
+.image{
+  width: 100%;
+  text-align: center;
 }
 
-  .leftnull{
-    height: 3px;
-    width: 100%;
-  }
+.image img{
+  width: 100%;
+}
 
-  .main{
-    flex-direction: column;
-    width: 98%;
+section{
+  flex-direction: column;
+  width: 100%;
+}
 
-  }
+.leftnull{
+  height: 3px;
+  width: 100%;
+}
 
-  .menuleft{
-    width: 93%;
-    margin: 10px;
-  }
+.main{
+  flex-direction: column;
+  width: 98%;
+}
 
-  .menuright{
-    flex-direction: column;;
-    width: 100%;
-    margin: 1px;
-  }
+.menuleft{
+  width: 93%;
+  margin: 10px;
+}
 
-  .bar1{
-    width: 93%;
-    height: 60px;
-    background:#7aa244;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
+.menuright{
+  flex-direction: column;;
+  width: 100%;
+  margin: 1px;
+}
 
-  .bar1 p{
-    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
-    text-align: center;
-    color: #1a1a1a;
-    padding: 0%;
-  }
+.bar1{
+  width: 93%;
+  height: 60px;
+  background:#7aa244;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+}
 
-  .bar2{
-    width: 93%;
-    height: 60px;
-    background:#1a1a1a;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
+.bar1 p{
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
+  text-align: center;
+  color: #1a1a1a;
+  padding: 0%;
+ }
 
-  .bar2 p{
-    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
-    text-align: center;
-    color:  #e5eae8;
-    padding: 0%;
-  }
+.bar2{
+  width: 93%;
+  height: 60px;
+  background:#1a1a1a;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+}
 
-  .bar3{
-    width: 93%;
-    height: 60px;
-    background:#7aa244;
-    margin: 10px;
-    box-shadow: 5px 5px 10px  #878985;
-    border-radius: 10px;
-    align-self: stretch;
-  }
+.bar2 p{
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
+  text-align: center;
+  color:  #e5eae8;
+  padding: 0%;
+}
 
-  .bar3 p{
-    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
-    text-align: center;
-    color: #1a1a1a;
-    padding: 0%;
-  }
+.bar3{
+  width: 93%;
+  height: 60px;
+  background:#7aa244;
+  margin: 10px;
+  box-shadow: 5px 5px 10px  #878985;
+  border-radius: 10px;
+  align-self: stretch;
+}
 
-  .about{
-    width: 120px;
-    padding: 1%;
-    font-size: 18px;
-    margin-left: 60px;
-  }
+.bar3 p{
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
+  text-align: center;
+  color: #1a1a1a;
+  padding: 0%;
+ }
 
-  .text{
-    font-size: 16px;
-  }
+.about{
+  width: 120px;
+  padding: 1%;
+  font-size: 18px;
+  margin-left: 60px;
+}
+
+.text{
+  font-size: 16px;
+}
+
 .rightnull{
   height: 3px;
   width: 100%;
@@ -414,6 +417,4 @@ footer{
 .subscribe input[type=text]{
   margin-bottom: 3px;
 }
-
-
 }
