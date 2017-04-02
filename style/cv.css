@@ -14,6 +14,7 @@ a{
   text-decoration: none; /*removes the underline from the anchored text */
 }
 
+/*-----Header-----*/
 header{
   background: #1a1a1a;
   background-image: url("header.gif");
@@ -22,7 +23,6 @@ header{
   border-bottom:0.5px solid #e5eae8; border-width: medium;
   padding:1%;
   display: flex;flex-direction: row; /* displays the header container in a row*/
-
 }
 
 .image{
@@ -50,6 +50,8 @@ header{
     opacity: 0.9; /*on hover the opacity is applied to the list items */
 }
 
+/*-----Section-----*/
+
 section{
   /*background: #e5eae8;*/
   background-image: url("bg.gif");
@@ -61,14 +63,11 @@ section{
 
 .leftnull{
   width: 20%;
-
 }
 
 .main{
   width: 60%;
-
   display: flex;flex-direction: column;
-
 }
 
 .menuleft{
@@ -77,14 +76,12 @@ section{
 
 .top{
   height: 30px;
-
 }
 
 .bottom{
   border-radius: 15px;
   box-shadow: 5px 5px 10px #878985;
   background: #7aa244;
-
 }
 
 .text{
@@ -92,37 +89,31 @@ section{
   text-align: left;
   text-align: justify;
   padding: 3%;
-
 }
 
 .text h4{
   border-bottom: 1px solid #1a1a1a;
 }
 
-
-
 .about{
   background-color: #7aa244;
-    border: none;
-    color: #e5eae8;
-    padding: 1px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 22px;
-    width: 135px;
-    height: 40px;
-    margin-left: 300px;
-    margin-top: 3px;
+  border: none;
+  color: #e5eae8;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 22px;
+  width: 135px;
+  height: 40px;
+  margin-left: 300px;
+  margin-top: 3px;
 }
 
-
 .menuright{
-
   display: flex; flex-direction: row;
   margin: 10px;
-
 }
 
 .bar1{
@@ -153,7 +144,6 @@ section{
   box-shadow: 5px 5px 10px #878985;
   border-radius: 50%;
   margin-top: 20px;
-
 }
 
 .bar2 p{
@@ -173,7 +163,6 @@ section{
   box-shadow: 5px 5px 10px #878985;
   border-radius: 50%;
   margin-top: 20px;
-
 }
 
 .bar3 p{
@@ -183,29 +172,25 @@ section{
   color: #1a1a1a;
   padding: 6%;
   padding-top: 20%;
-
 }
 
 
 .rightnull{
   width: 20%;
-
 }
 
-
+/*-----Footer-----*/
 
 footer{
   background: #1a1a1a;
   display: flex;flex-direction: column;;
   border-top:0.5px solid #e5eae8; border-width: medium; border-top-style:solid;
-
 }
 
 .footerup{
   display: flex; flex-flow: row wrap; justify-content: space-around;
   margin-bottom: 10px;
   font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 20px;
-
 }
 
 .footerup .share{
@@ -275,13 +260,13 @@ footer{
   font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
-
 }
 
 .copyright{
   text-align: center; color: #e5eae8;
 }
 
+/*-----mobile responsive-----*/
 @media all and (max-width: 600px){
   header{
     flex-direction: column;
@@ -300,8 +285,7 @@ footer{
   section{
     flex-direction: column;
     width: 100%;
-
-  }
+}
 
   .leftnull{
     height: 3px;
@@ -344,7 +328,6 @@ footer{
 
   .bar2{
     width: 93%;
-
     height: 60px;
     background:#1a1a1a;
     margin: 10px;
@@ -362,7 +345,6 @@ footer{
 
   .bar3{
     width: 93%;
-
     height: 60px;
     background:#7aa244;
     margin: 10px;
@@ -388,58 +370,50 @@ footer{
   .text{
     font-size: 16px;
   }
-
-
-
-  .rightnull{
-    height: 3px;
-    width: 100%;
-
+.rightnull{
+  height: 3px;
+  width: 100%;
   }
 
-  footer{
-    flex-direction: column;
-
+footer{
+  flex-direction: column;
   }
 
-  .footerup{
-    flex-direction: column;
-    width: 100%;
+.footerup{
+  flex-direction: column;
+  width: 100%;
   }
 
-  .share{
-    width: 100%;
-    text-align: left;
+.share{
+  width: 100%;
+  text-align: left;
+}
 
-  }
+.share ul{
+  margin-bottom: 3px;
+}
 
-  .share ul{
-    margin-bottom: 3px;
-  }
+.share ul li{
+  font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 13px;
+}
 
-  .share ul li{
-    font-family: "Philosopher Regular", Philosopher, sans-serif; font-size: 13px;
+.subscribe{
+  width: 100%;
+  display: block;margin: 0 auto;
+}
 
-  }
-
-   .subscribe{
-    width: 100%;
-    display: block;margin: 0 auto;
-  }
-
-  .subscribe p{
+.subscribe p{
     display: none;
-  }
+}
 
-  .subscribe img{
-    height:20px;
+.subscribe img{
+  height:20px;
+  margin-bottom: 4px;
+}
 
-    margin-bottom: 4px;
-  }
-
-  .subscribe input[type=text]{
-    margin-bottom: 3px;
-  }
+.subscribe input[type=text]{
+  margin-bottom: 3px;
+}
 
 
-  }
+}
