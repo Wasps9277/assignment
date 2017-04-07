@@ -225,7 +225,7 @@ footer{
   flex-flow: row wrap;
   justify-content: space-around;
   margin-bottom: 10px;
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
   font-size: 20px;
 }
 
@@ -291,7 +291,8 @@ footer{
 }
 
 .footerbottom{
-  font-family: "Josefin Sans Regular", Josefin Sans, sans-serif; font-size: 16px;
+  font-family: "Philosopher Regular", Philosopher, sans-serif;
+  font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -314,6 +315,10 @@ header{
 
 .image img{
   width: 100%;
+}
+
+.menubar{
+  display: none; /*If the width is less than or equal to 600px, the menubar is not displayed*/
 }
 
 section{

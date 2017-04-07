@@ -130,11 +130,13 @@ section{
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: "Philosopher Regular", Philosopher, sans-serif;
+  text-align: center;
 }
 
 .info h4{
   color: #141414;
   font-family: "Philosopher Regular", Philosopher, sans-serif;
+  text-align: center;
 }
 
 /*-----button-----*/
@@ -325,6 +327,10 @@ header{
 
 .image img{
   width: 100%;
+}
+
+.menubar{
+  display: none; /*If the width is less than or equal to 600px, the menubar is not displayed*/
 }
 
 section{

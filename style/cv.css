@@ -285,6 +285,10 @@ header{
   width: 100%;
 }
 
+.menubar{
+  display: none; /*If the width is less than or equal to 600px, the menubar is not displayed*/
+}
+
 section{
   flex-direction: column;
   width: 100%;
