@@ -43,7 +43,8 @@ header{
 }
 
 .menubar ul{
-  display: flex; flex-flow: row-reverse; /*reverses the flex-item */
+  display: flex;
+  flex-flow: row-reverse; /*reverses the flex-item */
 }
 
 .menubar ul li {
