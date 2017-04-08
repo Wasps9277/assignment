@@ -114,6 +114,7 @@ section{
   border-bottom:0.5px solid #e5eae8; /*border is created at the bottom of the top section */
   border-width: medium;
   margin: 20%;
+  height: 100%;
 }
 
 .container{
@@ -131,7 +132,7 @@ section{
 }
 
 /*-----For mozilla firefox-----*/
-/*@-moz-keyframes xfade {
+@-moz-keyframes xfade {
     0% {
         opacity: 1;
     }
@@ -147,10 +148,10 @@ section{
     100% {
         opacity:1;
     }
-} *
+}
 
 /*-----For google chrome and safari-----*/
-/* @-webkit-keyframes xfade {
+@-webkit-keyframes xfade {
     0% {
         opacity: 1;
     }
@@ -166,7 +167,7 @@ section{
     100% {
         opacity:1;
     }
-} */
+}
 
 /*-----original-----*/
 @keyframes xfade {

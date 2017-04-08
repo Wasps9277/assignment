@@ -1,7 +1,9 @@
 /*Esha rajbhandari
 UN ID: 16418519*/
 body{
-  margin: auto; background: #e5eae8;
+  margin: auto; background-image: url(../images/bg.gif);
+  background-repeat: repeat;
+  background-position: left top;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -19,7 +21,7 @@ a{
 /*-----Header-----*/
 header{
   background: #1a1a1a;
-  background-image: url("header.gif");
+  background-image: url(../images/header.gif);
   background-color: #1a1a1a;
   background-position: top left;
   background-repeat: repeat;
