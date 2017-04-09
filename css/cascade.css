@@ -127,8 +127,8 @@ section{
   position: absolute; /*stacks the images on top of one another */
   top: 0.5%;/*positions the image 3px from the top */
   border-bottom: 2px solid #e5eae8;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 /*-----For mozilla firefox-----*/
